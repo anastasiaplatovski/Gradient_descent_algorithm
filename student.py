@@ -1,7 +1,6 @@
 import pandas as pd
 
-data = pd.read_csv("C:\\Users\\PC\\Downloads\\linreg_dataset\\random2.csv", header=None, delimiter=',')
-df = pd.DataFrame(data)
+df = pd.read_csv("C:\\Users\\PC\\Downloads\\linreg_dataset\\random2.csv", header=None, delimiter=',')
 weight_0 = 0
 weight_1 = 0
 weight_2 = 0
