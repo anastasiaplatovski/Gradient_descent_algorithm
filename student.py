@@ -52,8 +52,8 @@ def linear_regression():
             gradient_1 = gradient_1 + x_1 * (y - y_current)
             gradient_2 = gradient_2 + x_2 * (y - y_current)
             squared_sum_of_errors_current = squared_sum_of_errors_current + ((y - y_current) ** 2)
-        print(iteration_number, round(weight_0, 4), round(weight_1, 4), round(weight_2, 4),
-              round(squared_sum_of_errors_current, 4))
+        print(str(iteration_number)+","+str(round(weight_0, 4))+","+str(round(weight_1, 4))+","+str(round(weight_2, 4))+","+
+              str(round(squared_sum_of_errors_current, 4)))
         diff = abs(squared_sum_of_errors - squared_sum_of_errors_current)
         squared_sum_of_errors = squared_sum_of_errors_current
         weight_0 = weight_0 + learningRate * gradient_0
